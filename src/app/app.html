@@ -1,1 +1,27 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mainContent">
+  <ion-header>
+    <ion-toolbar color="danger">
+      <ion-title>
+        Menu
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <ion-list id="menu-list2">
+      <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item2">
+        <ion-icon color="danger" name="home" item-left></ion-icon>
+        Home
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToMurli()" id="menu-list-item3">
+        <ion-icon color="danger" name="list" item-left></ion-icon>
+        Murli
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToAbout()" id="menu-list-item4">
+        <ion-icon color="danger" name="help" item-left></ion-icon>
+        About
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

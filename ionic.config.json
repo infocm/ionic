@@ -1,5 +1,8 @@
 {
   "name": "murli",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "cc474c2e",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

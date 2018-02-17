@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      {{ title }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content #popoverContent padding ion-text>
+  <div  #popoverText>
+    <div *ngFor="let item of lists">
+      {{ item }}
+    </div>
+  </div>
+</ion-content>
